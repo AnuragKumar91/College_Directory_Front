@@ -1,0 +1,83 @@
+
+
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    /* Ensures nothing spills outside the container */
+  }
+  
+  /* Create two pseudo-elements for the background colors */
+  .banner::before,
+  .banner::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+  
+  .banner::before {
+    left: 0;
+    background: #f7d3dc;
+    /* Pink color */
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+  }
+  
+  .banner::after {
+    right: 0;
+    background: #FE7943;
+    /* Orange color */
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    /* Creates the bent effect */
+  }
+  
+  .right-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  #counselling-button{
+  margin-top: 50px;
+   color: black ;
+   background-color: #f7d3dc;
+  
+  }
+  
+  #counselling-button:hover{
+   background-color: #efbdc9;
+  }
+  @media (max-width: 575.98px) { /* Small screens */
+    .banner {
+      display: none; /* Hide banner at small screens */
+    }
+  
+    .banner1 {
+      display: block; /* Display banner1 at small screens */
+      background-color: #f7d3dc;
+      width: 100%;
+    }
+  
+    #counselling-button{
+      /* border: 1px solid #d72252; */
+      color: black ;
+      background-color: #fe7943;
+     
+     }
+  }
+  
+  
+  
+  @media (min-width: 576px) { /* Larger screens */
+    .banner1 {
+      display: none; /* Hide banner1 at large screens */
+    }
+  
+  }
+  

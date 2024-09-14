@@ -1,0 +1,12 @@
+
+
+.box{
+    background-image:"url(../images/TEAM.jpg)" ;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.box p{
+    color: red;
+    
+}

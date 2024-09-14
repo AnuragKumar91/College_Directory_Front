@@ -1,0 +1,119 @@
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+  1. Region API:-
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(addRegion):-    https://admissioninnepal.in/api/add-region
+Parameters:-
+[key,region_name,created_by,created_at,updated_by,updated_at,deleted_by,deleted_at,status,slug,tittle,description,meta_tittle,
+meta_keyword,meta_description,custom_field_id,custom_field_value,og_tittle,og_description,og_image]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(editRegion):-https://admissioninnepal.in/api/edit-region
+Parameters:-
+[key,region_name,created_by,created_at,updated_by,updated_at,deleted_by,deleted_at,status,slug,tittle,description,meta_tittle,
+meta_keyword,meta_description,custom_field_id,custom_field_value,og_tittle,og_description,og_image]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(getRegion):-https://admissioninnepal.in/api/region-list/12321
+Parameters:-auth_key
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ url(deleteRegion):-    https://admissioninnepal.in/api/delete-region
+Parameters:- key,slug
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(regionbyslug):- https://admissioninnepal.in/api/region-slug/12321/ca123  Live URL(https://admissioninnepal.in/api/region-slug/12321/abc8)
+Parameters:-auth-key,slug
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+2. Country API:-
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(getCountry):-  https://admissioninnepal.in/api/region-list/12321
+Parameters:-auth_key
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(addCountry):- https://admissioninnepal.in/api/add-country
+Parameters:- 
+[key,slug,region_id,created_by,created_at,updated_by,updated_at,deleted_by,deleted_at,status,slug,tittle,description,meta_tittle,
+meta_keyword,meta_description,custom_field_id,custom_field_value,og_tittle,og_description,og_image,country_name,about_country,food_culture,language,prime_minister,president,population,rank,icon,map,flag,]
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(editCountry):- https://admissioninnepal.in/api/edit-country
+Parameters:- [key,slug,region_id,country_name,about_country,food_culture,language,prime_minister,president,population,rank,icon,map,flag,created_by,created_at,updated_by,updated_at,deleted_by,deleted_at,status,slug,tittle,description,meta_tittle,
+meta_keyword,meta_description,custom_field_id,custom_field_value,og_tittle,og_description,og_image,]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(deleteCountry):- https://admissioninnepal.in/api/delete-country
+Parameters:-auth_key,slug
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(singleCountry):-https://admissioninnepal.in/api/single-country/12321/abc2
+Parameters:-[auth_key,slug]
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+3. State API:-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(getState):-https://admissioninnepal.in/api/state-list/12321
+Parameters:-auth_key
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(addState):-https://admissioninnepal.in/api/add-state
+Parameters:-
+[key,slug,region_id,country_id,state_name,about_state,food_culture,language,chief_minister,governer,population,rank,icon,map,
+created_by,created_at,updated_by,updated_at,deleted_by,deleted_at,status,slug,tittle,description,meta_tittle,
+meta_keyword,meta_description,custom_field_id,custom_field_value,og_tittle,og_description,og_image,]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(editState):-https://admissioninnepal.in/api/edit-state
+Parameters:-[key,slug,region_id,country_id,state_id,state_name,about_state,food_culture,language,chief_minister,governer,population,rank,icon,map,
+created_by,created_at,updated_by,updated_at,deleted_by,deleted_at,status,slug,tittle,description,meta_tittle,
+meta_keyword,meta_description,custom_field_id,custom_field_value,og_tittle,og_description,og_image,]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(singleState):-https://admissioninnepal.in/api/single-state/12321/abc14
+Parameters:-[auth_key,slug]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(deleteState):-https://admissioninnepal.in/api/delete-state
+Parameters:-auth_key,slug
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+4. City API:-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(getCity):-https://admissioninnepal.in/api/city-list/12321
+Parameters:-auth_key
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(addCity):-https://admissioninnepal.in/api/add-city
+Parameters:-
+[key,slug,region_id,country_id,state_id,city_name,about_city,food_culture,language,population,rank,icon,map,
+created_by,created_at,updated_by,updated_at,deleted_by,deleted_at,status,slug,tittle,description,meta_tittle,
+meta_keyword,meta_description,custom_field_id,custom_field_value,og_tittle,og_description,og_image,]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(editCity):-https://admissioninnepal.in/api/edit-city
+Parameters:-
+[key,slug,region_id,country_id,state_id,city_name,about_city,food_culture,language,population,rank,icon,map,
+created_by,created_at,updated_by,updated_at,deleted_by,deleted_at,status,slug,tittle,description,meta_tittle,
+meta_keyword,meta_description,custom_field_id,custom_field_value,og_tittle,og_description,og_image,]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(singleCity):-https://admissioninnepal.in/api/single-city/12321/abc14
+Parameters:-[auth_key,slug]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(deleteCity):-https://admissioninnepal.in/api/delete-city
+Parameters:-auth_key,slug
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+5. Locality API:-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(getLocality):-https://admissioninnepal.in/api/locality-list/12321
+Parameters:-auth_key
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(addLocality):-https://admissioninnepal.in/api/add-locality
+Parameters:-
+[key,slug,region_id,country_id,state_id,city_id,locality_name,about_locality,population,rank,
+created_by,created_at,updated_by,updated_at,deleted_by,deleted_at,status,slug,tittle,description,meta_tittle,
+meta_keyword,meta_description,custom_field_id,custom_field_value,og_tittle,og_description,og_image,]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(editLocality):-https://admissioninnepal.in/api/edit-locality
+Parameters:-
+[key,slug,region_id,country_id,state_id,city_id,locality_name,about_locality,population,rank,
+created_by,created_at,updated_by,updated_at,deleted_by,deleted_at,status,slug,tittle,description,meta_tittle,
+meta_keyword,meta_description,custom_field_id,custom_field_value,og_tittle,og_description,og_image,]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(singleLocality):-http://localhost/api/single-locality/12321/abc14
+Parameters:-[auth_key,slug]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+url(deleteLocality):-https://admissioninnepal.in/api/delete-locality
+Parameters:-auth_key,slug
